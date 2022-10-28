@@ -5,65 +5,176 @@
 
 }
 
+body{
+    background-image: radial-gradient(#c83cde,#ff57e5,#ffff56) 
+}
+
+#whatsapp{
+
+    position: fixed; 
+    bottom:10px;
+    right:10px; 
+}
+
+/*index*/
+
 
 header{
-    background-color: bisque;
+    height: 300px;
+
+}
+
+.titlename{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
-    color: brown;
+    color: black;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-
-
+    
 
 }
 
 h2{
-    color: rgb(169, 83, 83);
+    color: black;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-
-
-}
-
-nav{
-    background-color:blanchedalmond;
-    text-decoration: none; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    
 
 }
 
+
+ul{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: nowrap;
+
+}
 
 a{
-    font: size 20px;
     color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     text-decoration: none;
+    
+}
 
+.imgslide{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    
 
+}
+
+.pimgslide{
+    text-align: center;
+    font-size: 20px;
 }
 
 
 main{
-    background-color: bisque;
+    height: 1300px;
 }
 
+
+.section{
+    display: grid;
+    
+
+}
+
+#imgVani{
+    grid-area: img;
+    border-radius: 10px;
+
+}
+
+.imgVani{
+    animation-name: imgVani;
+    animation-duration: 3s;
+}
+
+@keyframes imgVani{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+
+}
+
+#pgridindex{
+    grid-area: p;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
 
 footer{
-    background-color: rgb(255, 222, 182); 
+    background-color: black;
+    display: grid;
+    width: auto;
+
+}
+
+.icons{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.faceicon{
+    grid-area: f;
+}
+
+.igicon{
+    grid-area: i;
+}
+
+#pfooter{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-area: p;
+    font-style: italic; 
+
+}
+
+#p2footer{
+    grid-area: p2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p3footer{
+    grid-area: p3;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p4footer{
+    grid-area: p4;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p5footer{
+    grid-area: p5;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-p{
-    color:brown;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-weight: bold; 
-}
+/*Tratamientos*/
 
 table{
     background-color: rgb(233, 232, 181);
@@ -98,13 +209,7 @@ table{
 }
 
 
-#whatsapp{
-    width: 150px;  
-    height:100px;
-    position: fixed; 
-    bottom:10px;
-    right:10px; 
-}
+
 
 #mapa{
     width: 400px;
@@ -112,22 +217,126 @@ table{
 }
 
 
-.icons{
-    width: 50px;
-    height: 50px;
+
+
+/*@media*/
+
+@media only screen and (max-width: 600px){
     
+    ul{
+        height: 300px;
+        flex-direction: column;
 }
 
+    a{
+        font-size: 18px;
+}
 
-#p{
-    display: inline-block;
+    h1{
+        font-size: 40px;
+}
+
+    h2{
+        font-size: 30px;
+}
+
+    .section{
+        height: 1000px; 
+        grid-template-rows: 50% 50%;
+        grid-template-columns:100% ;
+        grid-template-areas: "img"
+                              "p";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+}
+
+    #imgVani{
+        height:400px;
+}
+
+    #whatsapp{
+        width: 50px;  
+        height:50px;
+}
+
+    footer{
+        font-size: 10px;
+        height: 400px;
+        grid-template-rows: 15% 15% 15% 15% 15% 15% 10%;
+        grid-template-columns: 100%;
+        grid-template-areas:"p2" 
+                            "p3" 
+                            "p4" 
+                            "p5"
+                            "f"
+                            "i"
+                            "p";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        
+}
+
+}
+
+@media only screen and (min-width: 600px){
+
+    ul{
+        height:150px;
+        flex-direction: row;
+}
+
+    a{
+        font-size: 20px;
+    }
+
+
+    h1{
+        font-size: 60px;
     
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .section{
+        height: 800px; 
+        grid-template-rows: 600px;
+        grid-template-columns: 40% 40%;
+        grid-template-areas: "img p";
+        justify-content: center;
+        align-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #imgVani{
+        height:600px;
+    }
+
+    #whatsapp{
+        width: 100px;  
+        height:100px;
+    }
+
+    footer{
+        font-size: 18px;
+        height: 250px;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:"p2  ."
+                            "p3  f"
+                            "p4  i"
+                            "p5  p";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+
+    }
+
 }
-
-#imgdiag{
-    display: inline-block;
-    width: 400px;
-    height:500px;
-
-}
-

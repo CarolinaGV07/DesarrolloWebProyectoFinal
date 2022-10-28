@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Dermatocosmiatra Vanina Gavatorta Valdez</title>
 
 </head>
 <body>
 
-    <header>  
-        <h1>Vanina Gavatorta Valdez</h1>
-        <h2>Dermatocosmiatra</h2>
-
+    <header class="titlename">
+        <h1 class="animate__animated animate__fadeIn">Vanina Gavatorta Valdez</h1>
+        <h2 class="animate__animated animate__fadeInRight">Dermatocosmiatra</h2>
 
     </header>
 
-    <nav>
+    <nav class="container"> 
         <ul>
             <li>
                 <a href="index.html">Inicio</a>
@@ -39,32 +40,65 @@
 
     </nav>
 
-    <main> 
-        <section>
-            <h3 class="h3">Te invito a conocer el mundo del Skin Care</h3> 
-            <img src="img/Vani natural.jpeg" alt="Vanina" class="imgvertical">  
-            <p>Recibida en la Escuela de la Dra. Viviana Bustos, posee una larga trayectoria
-            en el rubro. Brinda una amplia variedad de tratamientos y cuidados para la piel 
-            y el resto del cuerpo.  
+    <main class="container">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Consulslide.jpeg" class="d-block w-100 imgslide" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>AMBIENTE RELAJADO</h5>
+                  <p class="pimgslide">Atención personalizada basada en un diagnóstico previo</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/facialslide.jpg" class="d-block w-100 imgslide" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TRATAMIENTOS FACIALES</h5>
+                  <p class="pimgslide">Limpieza, peeling, manchas, rosácea, acné, dermapen, etc.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/espaldaslide.jpg" class="d-block w-100 imgslide" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TRATAMIENTOS CORPORALES</h5>
+                  <p class="pimgslide">Renovación, hidratación, peeling corporal por zona, etc.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          
+
+
+
+        <section class="container section">
+            <img src="img/Vani index.jpeg" alt="Vanina" class="section imgVani" id= "imgVani">
+            <p id="pgridindex">Soy Vanina, dermatocosmiatra facial y corporal, coach en Dermatocosmiatría. Siempre apasionada 
+            por el cuidado de la piel brindando a mis pacientes tratamientos para distintas afecciones. Trabajo 
+            apoyada en tres pilares fundamentales: la salud, la belleza y el relax.
+            Te doy la bienvenida al mundo del skincare, esperando que en mi consultorio encuentres una experiencia 
+            saludable para mejorar la calidad de tu piel y desarrollar el bienestar para tu alma.
             </p>
 
-
-        </section>
-
-        <section>
-            <h3 class="h3">Ambiente relajado</h3> 
-            <h4>Atención personalizada basada en un diagnóstico previo</h4>
-            <img src="img/Consultorio.jpeg" alt="Consultorio" class="imghorizontal"> 
-        </section>
-
-        <section>
-            <h3 class="h3">Cuidado del paciente hasta en el más mínimo detalle</h3> 
-            <img src="img/Vani con ambo.jpeg" alt="Vanina lista para trabajar" class="imgvertical">
         </section>
 
 
         <div>
-            <img src="img/ícono whatsapp.jpg" alt="" id="whatsapp"> 
+            <img src="img/íconowhatsappp.jpg" alt="" id="whatsapp"> 
 
         </div>
 
@@ -73,15 +107,24 @@
 
     </main>
 
-    <footer> 
-        <p>Sitio desarrollado por Carolina GV web desing & style</p>
+    <footer>  
+        <p id="pfooter">Sitio desarrollado por Carolina GV web desing & style</p>
+        <p id="p2footer">Datos de contacto</p>
+        <p id="p3footer">Dirección: Pres. M. Quintana 174, Castelar</p>
+        <p id="p4footer">E-mail: vaninagvdermatocosmiatra@gmail.com</p>
+        <p id="p5footer">Whatsapp: 1166628697</p>
 
-        <img src="img/Icono facebook.jpg" alt="" class="icons">
-        <img src="img/Icono Instagram.jpg" alt="" class="icons"> 
+
+        <img src="img/Icono facebook.jpg" alt="" class="icons faceicon">
+        <img src="img/Icono Instagram.jpg" alt="" class="icons igicon"> 
 
 
     </footer>
 
     
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 </html>
