@@ -10,14 +10,12 @@ body{
 }
 
 #whatsapp{
-
     position: fixed; 
     bottom:10px;
     right:10px; 
 }
 
 /*index*/
-
 
 header{
     height: 300px;
@@ -48,7 +46,6 @@ h2{
 
 }
 
-
 ul{
     height: 200px;
     display: flex;
@@ -77,11 +74,6 @@ a{
 .pimgslide{
     text-align: center;
     font-size: 20px;
-}
-
-
-main{
-    height: 1300px;
 }
 
 
@@ -173,8 +165,59 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*Diagnóstico*/
+
+#diaggrid{
+    display: grid;
+}
+
+.tdiaggrid{
+    grid-area: tit;
+
+}
+
+.imgdiaggrid{
+    grid-area: imgg;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.pdiaggrid{
+    grid-area: pp;
+    text-align: justify;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 
 /*Tratamientos*/
+
+#treatgrid{
+    border-style: solid;
+    display: grid;
+    
+
+}
+
+.tteatgrid{
+    grid-area: t;
+}
+
+.ptreatgrid{
+    grid-area: p;
+    text-align: justify;
+}
+
+.gridtreatimg{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    grid-area: img;
+    border-style:solid;
+    border-color: black;
+}
 
 table{
     background-color: rgb(233, 232, 181);
@@ -184,42 +227,131 @@ table{
 
 }
 
-.imgvertical{
-    width: 500px;
-    height: 600px;
+.lessmain{
+    height: 1200px;
+}
+
+/*Otros servicios*/
+
+#otherservgridbrows{
+    display: grid;
 
 }
 
-.imghorizontal{
-    width: 700px; 
-    height: 600px;  
-
+#otherservgridmakeup{
+    display: grid;
 }
 
-.h3{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(75, 16, 16);
+/*browssons*/
+
+.tu{
+    grid-area: tu;
 }
 
-
-#h2{
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+.a1{
+    grid-area: a1;
+    border-style: solid;
+    border-color: black;
 }
 
+.a2{
+    grid-area: a2;
+    border-style: solid;
+    border-color: black;
+}
 
+.a3{
+    grid-area: a3;
+    border-style: solid;
+    border-color: black;
+}
 
+.a4{
+    grid-area: a4;
+    border-style: solid;
+    border-color: black;
+}
 
+/*makeupsons*/
+
+.ti{
+    grid-area: ti;
+}
+
+.b1{
+    grid-area: b1;
+    border-style: solid;
+    border-color: black;
+}
+
+.b2{
+    grid-area: b2;
+    border-style: solid;
+    border-color: black;
+}
+
+.b3{
+    grid-area: b3;
+    border-style: solid;
+    border-color: black;
+}
+
+.b4{
+    grid-area: b4;
+    border-style: solid;
+    border-color: black;
+}
+
+.b5{
+    grid-area: b5;
+    border-style: solid;
+    border-color: black;
+}
+
+.b6{
+    grid-area: b6;
+    border-style: solid;
+    border-color: black;
+}
+
+.b7{
+    grid-area: b7;
+    border-style: solid;
+    border-color: black;
+}
+
+.b8{
+    grid-area: b8;
+    border-style: solid;
+    border-color: black;
+}
+
+/*Contacto*/
+
+#formgrid{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pcontact{
+    font-size: 25px;
+    font-weight: bold;
+
+}
 #mapa{
     width: 400px;
     height:400px; 
+    
+}
+
+.maincontact{
+    height: 1100px;
 }
 
 
-
-
-/*@media*/
+/*@media mobile*/
 
 @media only screen and (max-width: 600px){
     
@@ -241,7 +373,7 @@ table{
 }
 
     .section{
-        height: 1000px; 
+        height: 900px; 
         grid-template-rows: 50% 50%;
         grid-template-columns:100% ;
         grid-template-areas: "img"
@@ -261,6 +393,16 @@ table{
         height:50px;
 }
 
+
+    main{
+        height: 9300px;
+}
+
+    .mainindex{
+        height: 1100px;
+}
+    
+
     footer{
         font-size: 10px;
         height: 400px;
@@ -276,18 +418,102 @@ table{
         justify-content: center;
         align-content: center;
         justify-items: center;
+        align-items: center;     
+}
+
+    #treatgrid{
+        height: 800px; 
+        grid-template-rows: 20% 60% 20%;
+        grid-template-columns: 100%;
+        grid-template-areas:  "t"
+                             "img"
+                              "p";
+        justify-content: center;
+        align-content: space-around;
+        justify-items: center;
         align-items: center;
-        
+
+}
+
+    .ptreatgrid{
+        font-size:15px;
+}
+
+    .maintreat{
+        height: 9200px;
+    }
+
+
+    .imgshort{
+        height: 400px;
+        width: 303px;
+}
+
+    #diaggrid{
+        height: 800px; 
+        grid-template-rows: 10% 65% 25%;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:  "tit"
+                              "imgg"
+                               "pp"
+}
+
+    .maindiag{
+        height: 1600px;
+}
+
+    #otherservgridbrows{
+        height: 2000px;
+        grid-template-rows: 4% 24% 24% 24% 24%;
+        grid-template-columns: 100%;
+        grid-template-areas: "tu"
+                             "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-content: center;   
+}
+
+    #otherservgridmakeup{
+    height: 4200px;
+    grid-template-rows: 2% 12% 12% 12% 12% 12% 12% 14% 12%;
+    grid-template-columns: 100%;
+    grid-template-areas: "ti"
+                         "b1"
+                         "b2"
+                         "b3"
+                         "b4"
+                         "b5"
+                         "b6"
+                         "b7"
+                         "b8"; 
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.mainothserv{
+    height: 6300px;
 }
 
 }
+
+/*@media desktop*/
 
 @media only screen and (min-width: 600px){
 
     ul{
         height:150px;
         flex-direction: row;
-}
+    }
 
     a{
         font-size: 20px;
@@ -323,6 +549,13 @@ table{
         height:100px;
     }
 
+    main{
+        height: 7000px;
+    }
+
+    .mainindex{
+        height: 1300px;
+}
     footer{
         font-size: 18px;
         height: 250px;
@@ -339,4 +572,72 @@ table{
 
     }
 
+    #treatgrid{
+        height: 600px; 
+        grid-template-rows: 8% 92%;
+        grid-template-columns: 50% 50% ;
+        grid-template-areas:  "t   ." 
+                             "img  p";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .ptreatgrid{
+        font-size:20px;
+    }
+    
+    .maintreat{
+        height: 7000px;
+    }
+
+    #diaggrid{
+        height: 800px; 
+        grid-template-rows: 10% 70% 20%;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:  "tit"
+                             "imgg"
+                              "pp"
+    }
+
+    .maindiag{
+        height: 1800px;
+    }
+
+    #otherservgridbrows{
+        height: 1000px;
+        grid-template-rows: 10% 45% 45%;
+        grid-template-columns:50% 50%;
+        grid-template-areas: "tu tu"
+                             "a1 a2"
+                             "a3 a4";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    #otherservgridmakeup{
+        height: 1900px;
+        grid-template-rows: 4% 24% 24% 24% 24%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "ti ti"
+                             "b1 b2"
+                             "b3 b4"
+                             "b5 b6"
+                             "b7 b8"; 
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .mainothserv{
+        height: 3200px;
+    }
 }
